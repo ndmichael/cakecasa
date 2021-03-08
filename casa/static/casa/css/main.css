@@ -1,0 +1,36 @@
+
+
+
+#offer a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+#offer .product-cc {
+    /* border: thin rgb(207, 207, 207);  */
+    border: 15px solid #efefef;
+    padding: 10px; 
+    text-align: center; 
+    background-color: #fff; 
+
+}
+
+#offer img {
+    min-height: 100%; 
+    height: 250px; 
+    width: 100% !important; 
+    object-fit: cover;
+    transform: translateX(60px);
+    transition: transform .3s;
+    
+                           
+}
+
+#offer .product-cc:hover img {
+    transform: translateX(0);
+}
+
+#offer .cake-span {
+    padding: 40px 0;
+}
