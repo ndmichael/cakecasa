@@ -1,5 +1,6 @@
 <html lang="en">
 {% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'casa/css/main.css' %}" />
 
 </head>
+
 <body>
 
     <nav class=" nav-wrapper pink lighten-2">
@@ -18,14 +20,14 @@
             <a href="#" class="sidenav-trigger" data-target="mobile-links">
                 <i class=" material-icons blue-text md-48">menu</i>
             </a>
-                <ul class="hide-on-med-and-down" style="margin-left: 150px !important;">
-                    <li class=""><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Cakes</a></li>
-                    <li><a href="#">MilkShakes</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            
+            <ul class="hide-on-med-and-down" style="margin-left: 150px !important;">
+                <li class=""><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">MilkShakes</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
 
             <ul class=" right hide-on-med-and-down">
                 <li class=""><a href="#">Login</a></li>
@@ -45,17 +47,27 @@
     {% block content %}
 
     {% endblock content %}
-    
+
     <script src="{% static 'casa/js/jquery-3.4.1.min.js' %}">
     </script>
     <script src="{% static 'casa/js/js/materialize.min.js' %}">
     </script>
 
     <script>
-        $(document).ready(()=>{
+        $(document).ready(() => {
             $('.sidenav').sidenav();
             $('.parallax').parallax();
         })
+
+    </script>
+
+    <script>
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            fullHeight: true,
+            indicators: true
+        });
     </script>
 </body>
+
 </html>
