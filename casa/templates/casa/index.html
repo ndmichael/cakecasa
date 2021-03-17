@@ -8,7 +8,7 @@
     <!-- <span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(239 239 239 / 70%); padding: 0 !important;
      clip-path: circle(50% at 100% 50%); z-index: -1;"></span> -->
 
-     <span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #ee6e7366;
+    <span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #ee6e7366;
      clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 0); z-index: -1"></span>
     <div class=" container">
 
@@ -30,8 +30,8 @@
             </div>
             <div class="col s12 m6 l6 ">
                 <div class="" style="
-                overflow: hidden; position: relative; 
-                clip-path: circle(50% at 74% 50%); z-index: -1;">
+                clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                transform: translate(200px,50px);">
 
                     <img src="{% static 'casa/images/132174320_10157648337310753_2905210775196644942_n.jpg' %}"
                         class=" responsive-img "
@@ -97,7 +97,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                     <p class="cake-span">
-                        <img src="{% static 'casa/images/eugene-kuznetsov-Dkenkd-lwkc-unsplash.jpg' %}" class=" responsive-img " />
+                        <img src="{% static 'casa/images/eugene-kuznetsov-Dkenkd-lwkc-unsplash.jpg' %}"
+                            class=" responsive-img " />
                     </p>
                 </a>
             </div>
@@ -169,13 +170,13 @@
                     <div class="row">
                         <div class="col s6" style=" padding:20 !important; ">
                             <div class=" z-depth-1" style="border-radius: 10px; overflow: hidden;">
-                                <img src="{% static 'casa/images/david-holifield-9cBUUD2CnLU-unsplash.jpg' %}" class=" responsive-img "
-                                    style="object-fit: top; width: 100%; height: 220px;" />
+                                <img src="{% static 'casa/images/david-holifield-9cBUUD2CnLU-unsplash.jpg' %}"
+                                    class=" responsive-img " style="object-fit: top; width: 100%; height: 220px;" />
                             </div>
                         </div>
 
                         <div class="col s6" style=" padding:20 !important; ">
-                            <div class=" z-depth-1 " style="border-radius: 10px; overflow: hidden;" >
+                            <div class=" z-depth-1 " style="border-radius: 10px; overflow: hidden;">
                                 <img src="{% static 'casa/images/cake-slice.jpg' %}" class=" responsive-img"
                                     style="object-fit: top; width: 100%; height: 220px; " />
                             </div>
@@ -186,12 +187,12 @@
                                 <img src="{% static 'casa/images/cakes3.jpg' %}" class=" responsive-img"
                                     style="object-fit: top; width: 100%; height: 220px;" />
                             </div>
-                                
+
                         </div>
                         <div class="col s6" style=" padding:20 !important; ">
                             <div class=" z-depth-1-half" style="border-radius: 10px; overflow: hidden;">
-                                <img src="{% static 'casa/images/pratiksha-mohanty-SxHxyNx-6YI-unsplash.jpg' %}" class=" responsive-img"
-                                    style="object-fit: top; width: 100%; height: 220px;" />
+                                <img src="{% static 'casa/images/pratiksha-mohanty-SxHxyNx-6YI-unsplash.jpg' %}"
+                                    class=" responsive-img" style="object-fit: top; width: 100%; height: 220px;" />
                             </div>
                         </div>
                     </div>
@@ -204,7 +205,7 @@
 
 
 <!-- Shop by Categories -->
-<section id="ft-products" >
+<section id="ft-products">
     <div class=" container">
 
         <div class="row">
@@ -224,8 +225,7 @@
                 <div class="items">
                     <div class="row">
                         <div class="col s6 m6 grey lighten-4">
-                            <img src="{% static 'casa/images/cakes2-removebg-preview.png' %}"
-                                class=" responsive-img"/>
+                            <img src="{% static 'casa/images/cakes2-removebg-preview.png' %}" class=" responsive-img" />
                         </div>
                         <div class="col s6 m6" style="padding: 0; margin: 0;">
                             <div class="item-details">
@@ -290,7 +290,7 @@
                     <div class="row">
                         <div class="col s6 m6 grey lighten-4">
                             <img src="{% static 'casa/images/eugene-kuznetsov-Dkenkd-lwkc-unsplash.jpg' %}"
-                                class=" responsive-img"/>
+                                class=" responsive-img" />
                         </div>
                         <div class="col s6 m6" style="padding: 0; margin: 0;">
                             <div class="item-details ">
@@ -321,7 +321,8 @@
                 <div class="items">
                     <div class="row">
                         <div class="col s6 m6 grey lighten-4 ">
-                            <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img left" />
+                            <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}"
+                                class=" responsive-img left" />
                         </div>
                         <div class="col s6 m6">
                             <div style="padding: 10px 0 0 10px; width: 100%;">
@@ -354,18 +355,18 @@
 <!-- Our shop Parallax -->
 <section class=" parallax-container">
     <div class="parallax">
-        <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img left"
-         />      
+        <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img left" />
     </div>
-    
+
 </section>
 
 <section>
     <div class="container">
         <div class="row" style="padding: 4em 0;" style="margin: 0;">
             <div class="col s6 m6 ">
-                <img src="{% static 'casa/images/124893704_10157566725785753_2825119112175836310_n.jpg' %}" class="z-depth-4 responsive-img left"
-          style="object-fit: cover; object-position: top; height: 450px; width: 100%;"/>
+                <img src="{% static 'casa/images/124893704_10157566725785753_2825119112175836310_n.jpg' %}"
+                    class="z-depth-4 responsive-img left"
+                    style="object-fit: cover; object-position: top; height: 450px; width: 100%;" />
             </div>
 
             <div class="col s6 m6 center">
@@ -381,7 +382,7 @@
                     </span>
                 </div>
 
-                <div>                   
+                <div>
                     <p class="flow-text">
                         EMail
                     </p>
@@ -396,10 +397,10 @@
                         Opening Hours
                     </p>
                     <span class=" grey-text">
-                        Monday to Friday: 9AM - 9PM 
+                        Monday to Friday: 9AM - 9PM
                     </span>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -407,9 +408,55 @@
 
 
 <!-- What our clients says -->
-<div class=" container">
-    <h1 class=" indigo-text">Hello World</h1>
-</div>
+<section class=" grey lighten-4" style="padding-top: 2em;">
+    <h4 class="center" style="padding: 0 0 20px 0;">
+        What our customers say
+    </h4>
+
+    <div class="carousel carousel-slider center">
+        <div class="carousel-item pink lighten-2 white-text text-darken-3" href="#one!">
+            <div class="carousel-fixed-item center">
+                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img circle"
+                    style="width: 100px; height: 100px;  z-index: 30 !important;" />
+            </div>
+            <h2>Michael Jay Blest</h2>
+            <p class="grey-text text-lighten-3">
+                Looking for a best place to shop for cakes, <br />
+                Around Sydney Australia and saw Tina post on her facebook timeline<br />
+                I told myself search no more this is my fnal destination. <br />
+                lo and behold i wasnt dissapointed.
+            </p>
+        </div>
+        <div class="carousel-item red white-text" href="#two!">
+            <div class="carousel-fixed-item center">
+                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img circle z-depth-4"
+                    style="width: 100px; height: 100px;  z-index: 30 !important;" />
+            </div>
+            <h2>Bridget Stefano</h2>
+            <p class="grey-text text-lighten-3">
+                Looking for a best place to shop for cakes, <br />
+                Around Sydney Australia and saw Tina post on her facebook timeline<br />
+                I told myself search no more this is my fnal destination. <br />
+                lo and behold i wasnt dissapointed.
+            </p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+            <div class="carousel-fixed-item center">
+                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img circle"
+                    style="width: 100px; height: 100px;  z-index: 30 !important;" />
+            </div>
+            <h2>Jacquine Stancey</h2>
+            <p class="grey-text text-lighten-3">
+                Looking for a best place to shop for cakes, <br />
+                Around Sydney Australia and saw Tina post on her facebook timeline<br />
+                I told myself search no more this is my fnal destination. <br />
+                lo and behold i wasnt dissapointed.
+            </p>
+        </div>
+    </div>
+
+</section>
+
 
 
 
