@@ -48,9 +48,39 @@
 
     {% endblock content %}
 
-    <footer>
-        
+    <footer id="footer1" class=" page-footer grey darken-2" style="padding: 20px 0; border-top: 2px solid #fafafa;">
+        <div class="container">
+            <div class="row">
+                <div class="col  s6">
+                    <h4>Address</h4>
+                    <p>
+                        <i class="material-icons left pink-text accent-1">location_on</i>
+                        No 45 Tina high brow <br />
+                        Street melbourne Australia
+                    </p>
+                </div>
+                <div class="col offset-m3 s3">
+                    <h4>Contact</h4>
+                    <p>
+                        <i class=" material-icons left pink-text accent-1">contact_page</i>
+                        contact us page      
+                    </p>
+                    <p>
+                        <i class=" material-icons left pink-text accent-1">contact_mail</i>
+                        cakecasa@cake.com                      
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <div class="container" >
+        <div class="row" style="padding: 20px; ">
+            <div class="col s12 center" >
+                copyright &copy; all Right reserved 2021 <br />
+                developed by Michael @ nok-tech
+            </div>
+        </div>
+    </div>
 
     <script src="{% static 'casa/js/jquery-3.4.1.min.js' %}">
     </script>
@@ -67,8 +97,8 @@
 
     <script>
         $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            fullHeight: true,
+            // fullWidth: true,
+            // fullHeight: true,
             indicators: true
         });
     </script>
