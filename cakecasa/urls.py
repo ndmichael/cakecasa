@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('casa.urls', namespace='shop')),
+    path('', include('casa.urls', namespace='casa')),
 ]
 
 if settings.DEBUG:
