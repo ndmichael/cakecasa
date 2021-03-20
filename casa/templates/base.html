@@ -21,11 +21,11 @@
                 <i class=" material-icons blue-text md-48">menu</i>
             </a>
             <ul class="hide-on-med-and-down" style="margin-left: 150px !important;">
-                <li class=""><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li class=""><a href="{% url 'casa:casa-home' %}">Home</a></li>
+                <li><a href="{% url 'casa:casa-about' %}">About Us</a></li>
                 <li><a href="#">Cakes</a></li>
                 <li><a href="#">MilkShakes</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="{% url 'casa:casa-contact' %}">Contact Us</a></li>
             </ul>
 
 
@@ -44,6 +44,19 @@
         </div>
     </nav>
 
+    {% if messages %}
+        {% for message in messages %}
+            <div class="container" style="padding: 20px 0;">
+                <div class="row">
+                    <div class=" col s6 offset-m3">
+                        <div class="pink lighten-2 white-text" style="padding: 20px;">
+                            {{ message }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
     {% block content %}
 
     {% endblock content %}
