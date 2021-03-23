@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12 m9">
+                <div class="row"">
+                    {% for p in products %}
+                    <div class="col s12 m4 rounded">
+                        <div class=" card">
+                            <div class=" card-image">
+                                <img src="{{ p.image.url }}" alt="{{p.cake_name}} image" height="200px" />
+                                <a href="#" class="halfway-fab btn-floating pink pulse lighten-2">
+                                    <i class="material-icons">shopping_basket</i> 
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <p>{{p.cake_category}}</p>
+                                <h4 class="card-title">
+                                    {{ p.cake_name }}
+                                </h4>
+                                <p>from: <b>{{p.price}}</b></p>
+                            </div>
+                            <!-- <div class="card-action">
+                                <a href="#" class="btn btn-sm pink lighten-2">
+                                    <i class="left material-icons">shopping_basket</i> 
+                                    add to cart
+                                </a>
+                            </div> -->
+
+                        </div>
+                    </div>
+                    {% endfor %}              
+                </div>
+            </div>
+
+            <div class="col s12 m2 offset-m1" style="background-color:blueviolet; height: 200px;">
+                <div>
+                    {% for c in categories %}
+                    <a href="{{ c.get_absolute_url }}">{{c}}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+</section>
+
+<section>
+    <div class=" container">
+        <div class="row">
+            <div class="col s6 m4">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
