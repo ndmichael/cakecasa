@@ -36,5 +36,5 @@ class CakeProduct(models.Model):
     def __str__(self):
         return f"{self.cake_name}"
 
-    # def get_absolute_url(self):
-    #     return reverse('casa:cake_list_by_category', args=[self.id, self.slug])
+    def get_absolute_url(self):
+        return reverse('casa:cake_detail', args=[self.id, self.slug])
