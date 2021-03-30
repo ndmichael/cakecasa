@@ -31,8 +31,15 @@ def cake_list(request, category_slug=None):
         'title': 'standard cakes',
         # 'cart_product_form': cart_product_form
     }
-
     return render(request, 'casa/cakes/item_list.html', context)
+
+
+def cake_detail (request, id, slug):
+    product = get_object_or_404(CakeProduct, id=id, slug=slug, available=True)
+    context = {
+        'product': product
+    }
+    return render(request, 'casa/cakes/item_detail.html', context)
 
 
 def contact_view (request):
