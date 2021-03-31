@@ -14,6 +14,9 @@ def index (request):
 def about (request):
     return render(request, 'casa/about.html')
 
+def milkshakes (request):
+    return render(request, 'casa/milkshakes.html')
+
 
 def cake_list(request, category_slug=None):
     category = None
