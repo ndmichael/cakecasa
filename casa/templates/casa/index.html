@@ -14,7 +14,7 @@
 
         <div class="row">
             <div class="col s12 m6 l6">
-                <div class=" padd" style="padding: 0 10px 0 0;">
+                <div class="" style="padding: 0 10px 0 0;">
                     <h1>Beautiful <span class=" pink-text  text-lighten-2">cake</span> for unique You!!!</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -45,13 +45,10 @@
 
 
 <!-- What we offer -->
-<section id="offer" style=" padding: 3.5em 10px;">
+<section id="offers" style=" padding: 3.5em 10px;">
     <div class=" container">
         <div class=" row">
-            <div class="col s12 m8 offset-m2 center-align" style="padding-bottom: 35px;">
-                <!-- <p>
-                     Brief About Products
-                </p> -->
+            <div class="col s12 m8 offset-m2 center-align" style="padding: 15px;">
                 <h2 class=" lighten-1">
                     Our Products
                 </h2>
@@ -60,8 +57,8 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
             </div>
-            <div class="col s12 m4" style="padding: 15px;">
-                <a href="#" class="  product-cc  z-depth-2">
+            <div class="col s12 m4 offer">
+                <a href="{% url 'casa:cake_list' %}" class="  product-cc  z-depth-2">
                     <h3 class="">
                         Cakes
                     </h3>
@@ -74,8 +71,8 @@
                 </a>
             </div>
 
-            <div class="col m4" style="padding: 15px;">
-                <a href="#" class=" product-cc z-depth-2">
+            <div class="col m4 offer">
+                <a href="{% url 'casa:milkshakes' %}" class=" product-cc z-depth-2">
                     <h3 class="">
                         Milk Shakes
                     </h3>
@@ -88,7 +85,7 @@
                 </a>
             </div>
 
-            <div class="col s12 m4 " style="padding: 15px;">
+            <div class="col s12 m4 offer">
                 <a href="#" class="product-cc  z-depth-2">
                     <h3 class="">
                         Snacks
@@ -109,26 +106,26 @@
 
 
 <!-- Customize Cakes-->
-<section id="custom-cakes" style="background:#fafafa; padding: 4em 10px;">
+<section id="custom-cakes">
     <div class=" container">
         <div class="row">
-            <div class="col s12 m5" style="padding: 20px 30px; ">
+            <div class="col s12 m5 how-to">
                 <div>
                     <p style="padding: 0 !important;">Beautiful cake for unique You</p>
                     <h2 class="" style="padding: 0 !important;">
                         How to Customize a <span class="lighten-2 pink-text">Cake</span>
                     </h2>
-                    <span style="padding: 7px 0; display: block;">
-                        <i class="material-icons indigo-text text-lighten-2 rounded z-depth-1 left"
-                            style="padding: 10px; border-radius: 50%; ">how_to_reg</i>
+                    <span>
+                        <i class="material-icons indigo-text text-lighten-2 rounded z-depth-1 left">
+                            how_to_reg
+                        </i>
                         <div class=" valign-wrapper ">
                             <p> Click on Customize cakes</p>
                         </div>
                     </span>
 
-                    <span style="padding: 7px 0; display: block;">
-                        <i class="material-icons red-text rounded z-depth-1 left"
-                            style="padding: 10px; border-radius: 50%; ">
+                    <span>
+                        <i class="material-icons red-text rounded z-depth-1 left">
                             contact_mail
                         </i>
                         <div class=" valign-wrapper ">
@@ -136,9 +133,8 @@
                         </div>
                     </span>
 
-                    <span style="padding: 7px 0; display: block;">
-                        <i class="material-icons indigo-text rounded z-depth-1 left"
-                            style="padding: 10px; border-radius: 50%; ">
+                    <span>
+                        <i class="material-icons indigo-text rounded z-depth-1 left">
                             payments
                         </i>
                         <div class=" valign-wrapper ">
@@ -146,9 +142,8 @@
                         </div>
                     </span>
 
-                    <span style="padding: 7px 0; display: block;">
-                        <i class="material-icons pink-text text-lighten-1 rounded z-depth-1 left"
-                            style="padding: 10px; border-radius: 50%; ">
+                    <span>
+                        <i class="material-icons pink-text text-lighten-1 rounded z-depth-1 left">
                             cake
                         </i>
                         <div class=" valign-wrapper ">
@@ -168,32 +163,23 @@
             <div class="col s12 m7">
                 <div>
                     <div class="row">
-                        <div class="col s6" style=" padding:20 !important; ">
-                            <div class=" z-depth-1" style="border-radius: 10px; overflow: hidden;">
-                                <img src="{% static 'casa/images/david-holifield-9cBUUD2CnLU-unsplash.jpg' %}"
-                                    class=" responsive-img " style="object-fit: top; width: 100%; height: 220px;" />
-                            </div>
+                        <div class="col s6 custom-cake">
+                            <img src="{% static 'casa/images/david-holifield-9cBUUD2CnLU-unsplash.jpg' %}"
+                                class=" responsive-img z-depth-1" />
                         </div>
 
-                        <div class="col s6" style=" padding:20 !important; ">
-                            <div class=" z-depth-1 " style="border-radius: 10px; overflow: hidden;">
-                                <img src="{% static 'casa/images/cake-slice.jpg' %}" class=" responsive-img"
-                                    style="object-fit: top; width: 100%; height: 220px; " />
-                            </div>
+                        <div class="col s6 custom-cake">
+
+                            <img src="{% static 'casa/images/cake-slice.jpg' %}" class=" responsive-img z-depth-1" />
                         </div>
 
-                        <div class="col s6 " style=" padding:20 !important; ">
-                            <div class=" z-depth-1-half" style="border-radius: 10px; overflow: hidden;">
-                                <img src="{% static 'casa/images/cakes3.jpg' %}" class=" responsive-img"
-                                    style="object-fit: top; width: 100%; height: 220px;" />
-                            </div>
+                        <div class="col s6   custom-cake">
+                            <img src="{% static 'casa/images/cakes3.jpg' %}" class=" responsive-img z-depth-1" />
 
                         </div>
-                        <div class="col s6" style=" padding:20 !important; ">
-                            <div class=" z-depth-1-half" style="border-radius: 10px; overflow: hidden;">
-                                <img src="{% static 'casa/images/pratiksha-mohanty-SxHxyNx-6YI-unsplash.jpg' %}"
-                                    class=" responsive-img" style="object-fit: top; width: 100%; height: 220px;" />
-                            </div>
+                        <div class="col s6 custom-cake">
+                            <img src="{% static 'casa/images/pratiksha-mohanty-SxHxyNx-6YI-unsplash.jpg' %}"
+                                class=" responsive-img z-depth-1" />
                         </div>
                     </div>
                     <h5 class=" center">Uniqueness reflects in every cake</h5>
@@ -231,7 +217,7 @@
                         <div class="col s6 m6" style="padding: 0; margin: 0;">
                             <div class="item-details">
                                 <h5>Product 1 for you</h5>
-                                <p>40.00$</p>
+                                <p>&#36;40.00</p>
                                 <p>beautiful and elegant cakes designed for you</p>
                                 <span class="" style="padding-top: 20px !important; display: inline-block;">
                                     <a href="#" class=" btn-floating white pulse z-depth-2">
@@ -262,7 +248,7 @@
                         <div class="col s6 m6">
                             <div style="padding: 10px 0 0 10px; width: 100%;">
                                 <h5>Product 1 for you</h5>
-                                <p>40.00$</p>
+                                <p>&#36;40.00</p>
                                 <p>beautiful and elegant cakes designed for you</p>
                                 <span class="" style="padding-top: 20px !important; display: inline-block;">
                                     <a href="#" class=" btn-floating white pulse z-depth-1">
@@ -296,7 +282,7 @@
                         <div class="col s6 m6" style="padding: 0; margin: 0;">
                             <div class="item-details ">
                                 <h5>Product 1 for you</h5>
-                                <p>40.00$</p>
+                                <p>&#36;40.00</p>
                                 <p>beautiful and elegant cakes designed for you</p>
                                 <span class="" style="padding-top: 20px !important; display: inline-block;">
                                     <a href="#" class=" btn-floating white pulse z-depth-1">
@@ -328,7 +314,7 @@
                         <div class="col s6 m6">
                             <div style="padding: 10px 0 0 10px; width: 100%;">
                                 <h5>Product 1 for you</h5>
-                                <p>40.00$</p>
+                                <p>&#36;40.00</p>
                                 <p>beautiful and elegant cakes designed for you</p>
                                 <span class="" style="padding-top: 20px !important; display: inline-block;">
                                     <a href="#" class=" btn-floating white pulse z-depth-1">
@@ -361,6 +347,8 @@
 
 </section>
 
+
+<!-- address section -->
 <section>
     <div class="container">
         <div class="row" style="padding: 4em 0;" style="margin: 0;">
@@ -413,9 +401,9 @@
         What our customers say
     </h4>
 
-     <div class="carousel carousel-slider center" style="height: 400px;" >
+    <div class="carousel carousel-slider center" style="height: 400px;">
         <div class="carousel-item pink lighten-2 white-text text-darken-3" href="#one!">
-            
+
             <h2>Michael Jay Blest</h2>
             <p class="grey-text text-lighten-3">
                 Looking for a best place to shop for cakes, <br />
@@ -424,12 +412,13 @@
                 lo and behold i wasnt dissapointed.
             </p>
             <div class="carousel-fixed-item center">
-                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img circle z-depth-3"
+                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}"
+                    class=" responsive-img circle z-depth-3"
                     style="width: 100px; height: 100px;  z-index: 30 !important;" />
             </div>
         </div>
         <div class="carousel-item red white-text" href="#two!">
-            
+
             <h2>Bridget Stefano</h2>
             <p class="grey-text text-lighten-3">
                 Looking for a best place to shop for cakes, <br />
@@ -438,12 +427,13 @@
                 lo and behold i wasnt dissapointed.
             </p>
             <div class="carousel-fixed-item center">
-                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img circle z-depth-3"
+                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}"
+                    class=" responsive-img circle z-depth-3"
                     style="width: 100px; height: 100px;  z-index: 30 !important;" />
             </div>
         </div>
         <div class="carousel-item green white-text" href="#three!">
-            
+
             <h2>Jacquine Stancey</h2>
             <p class="grey-text text-lighten-3">
                 Looking for a best place to shop for cakes, <br />
@@ -452,20 +442,21 @@
                 lo and behold i wasnt dissapointed.
             </p>
             <div class="carousel-fixed-item center">
-                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}" class=" responsive-img circle z-depth-3"
+                <img src="{% static 'casa/images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg' %}"
+                    class=" responsive-img circle z-depth-3"
                     style="width: 100px; height: 100px;  z-index: 30 !important;" />
             </div>
         </div>
     </div>
 
-</section> 
+</section>
 
 <section id="clients-section" style="padding: 4em;">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 center">
                 <h3>
-                    Our Top <i class=" pink-text">Clients</i>  Worldwide
+                    Our Top <i class=" pink-text">Clients</i> Worldwide
                 </h3>
                 <p>
                     Join the league that orders from us <br />
@@ -473,13 +464,13 @@
                 </p>
             </div>
         </div>
-        <div class="row"  style="padding-top: 20px;">
+        <div class="row" style="padding-top: 20px;">
             <div class="col s6 m2 offset-m3">
-                <img src="{% static 'casa/images/logos/attachment_11.jpeg' %}" class=" respons z-depth-3"
+                <img src="{% static 'casa/images/logos/attachment_11.jpeg' %}" class=" responsive-img z-depth-3"
                     style="width: 100%; height: 150px;" />
             </div>
             <div class="col s6 m2">
-                <img src="{% static 'casa/images/logos/songkick.jpg' %}" class=" respons z-depth-3"
+                <img src="{% static 'casa/images/logos/songkick.jpg' %}" class=" responsive-img z-depth-3"
                     style="width: 100%; height: 150px;  z-index: 30 !important;" />
             </div>
             <div class="col s6 m2">
@@ -504,8 +495,8 @@
                 <img src="{% static 'casa/images/logos/Qantas-logo.png' %}" class=" responsive-img z-depth-3"
                     style="width: 100%; height: 150px;  z-index: 30 !important;" />
             </div>
-        </div> 
-        
+        </div>
+
     </div>
 </section>
 

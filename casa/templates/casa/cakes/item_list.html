@@ -25,7 +25,7 @@
                                         {{ p.cake_name }}
                                     </a>
                                 </h4>
-                                <p>from: <b>{{p.price}}</b></p>
+                                <p>from: <b>&#36; {{p.price}}</b></p>
                             </div>
                             <!-- <div class="card-action">
                                 <a href="#" class="btn btn-sm pink lighten-2">
@@ -40,11 +40,20 @@
                 </div>
             </div>
 
-            <div class="col s12 m2 offset-m1" style="background-color:blueviolet; height: 200px;">
+            <div class="col s12 m2 offset-m1">
                 <div>
-                    {% for c in categories %}
-                    <a href="{{ c.get_absolute_url }}">{{c}}</a>
+                    <ul>
+                        <li>
+                            <a href="{% url 'casa:cake_list' %}">All Cakes</a>
+                        </li>
+                        {% for c in categories %}
+                            <li style=" margin: 20px auto;" {% if category.slug == c.slug %}class="active" 
+                            {% endif %}>
+                                <a href="{{ c.get_absolute_url }}" class="black-text" style="padding: 10px; font-size: 20px; text-decoration: solid;">{{ c.name }}</a>
+                            </li>
                     {% endfor %}
+                    </ul>
+                    
                 </div>
             </div>
         </div>
