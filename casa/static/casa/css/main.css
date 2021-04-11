@@ -5,6 +5,27 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Redressed', cursive;
 }
 
+#landing-page {
+    min-height: 80vh; 
+    height: 100%; 
+    padding-top: 10vh; 
+    position: relative;
+}
+
+#landing-page .img-div {
+    transform: translate(200px,50px);
+}
+
+
+
+#landing-page img {
+    min-height: 100%; 
+    height: 500px; 
+    width: 100% !important; 
+    object-fit: cover;
+
+}
+
 #offers {
     padding-bottom: 35px;
 }
@@ -56,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20 30px;
 }
 
-#custom-cakes .how-to span {
-    padding: 5px 0; 
+#custom-cakes .how-to > span {
+    padding: 10px 0; 
     display: block;
 }
 
@@ -70,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px !important;
     overflow: hidden;
 }
+
 #custom-cakes .custom-cake img {
     object-fit: top; 
     width: 100%; 
@@ -78,18 +100,21 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
+
 #ft-products { 
     padding: 4em 0 !important;
 }
 
 #ft-products .items {
-    padding: 10px 0 0 10px; 
+    padding: 40px 0 0 10px; 
     width: 100%;
 }
 
 #ft-products .items  img {
-    object-fit: top; 
-    width: 100%; 
+    object-fit: cover; 
+    object-position: top;
+    width: 100% !important; 
     height: 250px; 
     padding: 25PX; 
     margin: 0 !important;
@@ -97,5 +122,86 @@ h1, h2, h3, h4, h5, h6 {
 
 #ft-products .item-details {
     padding: 0 10px;
+}
+
+#address {
+    padding: 4em 0;
+    margin: 0;
+}
+
+#address img{
+    object-fit: cover; 
+    object-position: top; 
+    height: 450px; 
     width: 100%;
+}
+
+#clients-section {
+    padding: 4em 0;
+    margin: 0;
+}
+
+#clients-section  img{
+    width: 100%;
+    height: 150px;
+}
+
+
+
+@media(max-width: 48em) {
+    #landing-page {
+        padding-top: 1vh;
+    }
+
+    #landing-page img {
+        min-height: 100%; 
+        height: 300px; 
+        width: 100% !important; 
+        object-fit: cover;
+    }
+
+    #landing-page .img-div {
+        transform: translate(0, 0);
+        padding-top: 20px;
+    }
+
+
+    #custom-cakes  .how-to {
+        padding: 0 0 20px 0;
+    }
+
+    #custom-cakes .custom-cake img {
+        height: 150px;
+    }
+
+    #custom-cakes .custom-cake {
+        padding: 10px !important;
+        overflow: hidden;
+    }
+
+    #ft-products .items {
+        padding: 20px 0;
+        margin: 0 !important;
+    }
+
+    #ft-products .items  img {
+        object-fit: cover; 
+        object-position: center;
+        width: 100%; 
+        height: 120px; 
+        padding: 0 !important; 
+    }
+    #ft-products .item-details > h5{
+        padding: 0;
+        margin: 0;
+    } 
+
+    #address img {
+        height: 300px;
+    }
+
+    #clients-section  img{
+        width: 100%;
+        height: 100px;
+    }
 }
