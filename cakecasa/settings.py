@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,12 +22,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-2g5zmjm(t=4@uztr-9goowv28&hy%rl94#j0k-ooz)y!-4u5g'
+# SECRET_KEY = '-2g5zmjm(t=4@uztr-9goowv28&hy%rl94#j0k-ooz)y!-4u5g'
+SECRET_KEY = os.environ.get('SECRET_KEY_CAKECASA')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cakecasapasti.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -81,9 +83,9 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cakecasa_db',
-        'USER': 'postgres',
-        'PASSWORD': 'daliMIKE0417',
+        'NAME': os.environ.get('CAKECASA_DB_NAME') ,
+        'USER': os.environ.get('CAKECASA_DB_USER'),
+        'PASSWORD': os.environ.get('CAKECASA_DB_PW') ,
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -133,3 +135,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+
+django_heroku.settings(locals())
