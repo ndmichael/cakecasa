@@ -8,14 +8,14 @@ from .models import CakeCategory, CakeProduct
 # Create your views here.
 
 def index (request):
-    return render(request, 'casa/index.html')
+    return render(request, 'casa/index.html', )
 
 
 def about (request):
-    return render(request, 'casa/about.html')
+    return render(request, 'casa/about.html', {'title': 'about'})
 
 def milkshakes (request):
-    return render(request, 'casa/milkshakes.html')
+    return render(request, 'casa/milkshakes.html', {'title': 'milkshakes'})
 
 
 def cake_list(request, category_slug=None):

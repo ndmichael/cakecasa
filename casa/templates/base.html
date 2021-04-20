@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        {% if title %}
+            <title>{{title}} - Cake Casa </title>
+        {% else %}
+            <title>Cake Casa</title>
+        {% endif %}
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'casa/css/css/materialize.min.css' %}" />
